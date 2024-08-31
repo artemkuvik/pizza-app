@@ -1,0 +1,8 @@
+.left-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  border-right: 0.5px solid rgb(212, 214, 224);
+}

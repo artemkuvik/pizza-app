@@ -5,7 +5,12 @@ import cn from "classnames";
 function Button({ children, className, ...props }: ButtonProps) {
   return (
     <button
-      className={cn(styles["button"], styles["accent"], className)}
+      className={cn(
+        styles["button"],
+        styles["accent"],
+        className,
+        styles["big-button"]
+      )}
       {...props}
     >
       {children}
