@@ -3,7 +3,7 @@ import LeftSignInPart from "./components/LeftSignInPart/LeftSignInPart";
 import RightSignInPart from "./components/RightSignInPart/RightSignInPart";
 import Title from "./components/Title/Title";
 import FormSignIn from "./components/FormSignIn/FormSignIn";
-import SignInProps from "./SignInFooter/SignInFooter";
+import SignInProps from "../src/components/SignInFooter/SignInFooter";
 
 function App() {
   return (
