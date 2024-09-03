@@ -6,8 +6,22 @@
   --text-secondary-color: #5b5b5e;
   --white-color: #ffffff;
   --separator-color: #d4d6e0;
+  height: 100%;
 }
 
+html,
 body {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
 }
