@@ -1,0 +1,5 @@
+.header {
+  display: flex;
+  padding: 39px 60px 30px 63px;
+  justify-content: space-between;
+}

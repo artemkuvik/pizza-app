@@ -1,0 +1,89 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  width: 323px;
+}
+
+.card {
+  width: 323px;
+  height: 247.71px;
+  border-radius: 18.21px;
+  box-shadow: 18.21px 18.21px 36.43px 0px rgba(211, 209, 216, 0.25);
+  background: rgb(255, 255, 255);
+  position: relative;
+}
+
+.img {
+  height: 166px;
+  width: 323px;
+  object-fit: none;
+  border-radius: 18.21px;
+}
+
+.text {
+  padding: 19px 0 0 13px;
+  width: 289px;
+}
+
+.name {
+  font-size: 18.21px;
+  font-weight: 600;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 81.36px;
+  height: 34px;
+  border-radius: 121.43px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  font-size: 20px;
+}
+
+.icon {
+  color: #fe724c;
+}
+
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  box-shadow: 0px 8.5px 18.21px 0px rgba(254, 114, 76, 0.4);
+  background: rgb(254, 114, 76);
+  border-radius: 100%;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 51px;
+  height: 29px;
+  position: absolute;
+  left: 13px;
+  top: 151px;
+  font-size: 12.14px;
+  font-weight: 600;
+  border-radius: 136px;
+  box-shadow: 0px 6.07px 24.29px 0px rgba(254, 114, 76, 0.2);
+  background: rgb(255, 255, 255);
+}
+
+.star {
+  color: #fe724c;
+}
+
+.description {
+  color: rgb(91, 91, 94);
+  font-size: 14.57px;
+}
