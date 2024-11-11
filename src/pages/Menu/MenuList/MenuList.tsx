@@ -16,7 +16,6 @@ function MenuList({ products }: MenuListProps) {
           description={p.ingredients.join(", ")}
         />
       ))}
-      ;
     </div>
   );
 }

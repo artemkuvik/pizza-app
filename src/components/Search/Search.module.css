@@ -1,5 +1,7 @@
 .input {
-  padding: 16px 30px 16px 44px;
+  display: block;
+  width: 256px;
+  padding: 16px 28px 16px 44px;
   border: 1px solid rgb(239, 239, 239);
   border-radius: 10px;
   height: 51px;

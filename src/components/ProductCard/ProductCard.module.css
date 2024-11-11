@@ -16,7 +16,7 @@
 .img {
   height: 166px;
   width: 323px;
-  object-fit: none;
+  object-fit: cover;
   border-radius: 18.21px;
 }
 
@@ -86,4 +86,10 @@
 .description {
   color: rgb(91, 91, 94);
   font-size: 14.57px;
+}
+
+.rating-position {
+  position: absolute;
+  left: 13px;
+  top: 151px;
 }

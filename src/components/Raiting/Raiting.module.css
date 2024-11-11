@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 51px;
+  height: 29px;
+
+  font-size: 12.14px;
+  font-weight: 600;
+  border-radius: 136px;
+  box-shadow: 0px 6.07px 24.29px 0px rgba(254, 114, 76, 0.2);
+  background: rgb(255, 255, 255);
+}

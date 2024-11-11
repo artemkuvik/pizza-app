@@ -1,0 +1,17 @@
+.input {
+  padding: 22px 98px 20px 20px;
+  font-size: 17px;
+  font-weight: 400;
+  box-sizing: border-box;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 10px;
+  box-shadow: 15px 20px 45px 0px rgba(233, 233, 233, 0.25);
+  background: rgb(255, 255, 255);
+}
+
+.label {
+  color: #c4c4c4;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}

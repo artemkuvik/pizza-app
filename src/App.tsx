@@ -1,6 +1,6 @@
 import Button from "./components/Button/Button";
 import { useState } from "react";
-import Input from "./components/Button/Input/Input";
+import Input from "./components/Input/Input";
 
 function App() {
   const [counter, setCounter] = useState<number>(0);

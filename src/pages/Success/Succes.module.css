@@ -1,0 +1,17 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 323px;
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 60px;
+}

@@ -1,15 +1,33 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import styles from "../Layout/Layout.module.css";
 import Button from "../../components/Button/Button";
 import cn from "classnames";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispath, RootState } from "../../store/store";
+import { getProfile, userAction } from "../../store/user.slice";
+import { useEffect } from "react";
 
 export function Layout() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispath>();
+  const profile = useSelector((s: RootState) => s.user.profile);
+  const items = useSelector((s: RootState) => s.cart.items);
+
+  useEffect(() => {
+    dispatch(getProfile());
+  }, [dispatch]);
+
+  const logout = () => {
+    dispatch(userAction.logout());
+    navigate("auth/login");
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.menu}>
         <img src="/public/Intersect.png" alt="man" className={styles.man} />
-        <div className={styles.title}>Антон Ларичев</div>
-        <div className={styles.email}>alaricode@ya.ru</div>
+        <div className={styles.title}>{profile?.name}</div>
+        <div className={styles.email}>{profile?.email}</div>
         <div className={styles.main}>
           <div className={cn(styles["menu-elem"])}>
             <img src="/public/menu-icon.svg" alt="menu" />
@@ -35,10 +53,11 @@ export function Layout() {
               to="/card"
             >
               Корзина
+              <span className={styles["cart-count"]}>{items.length}</span>
             </NavLink>
           </div>
         </div>
-        <Button className={styles.button}>
+        <Button onClick={logout} className={styles.button}>
           <img src="/public/Group 18072.svg" alt="" />
           <div>Выйти</div>
         </Button>
