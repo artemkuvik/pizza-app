@@ -1,6 +1,9 @@
-# pizza-app
-#https://artemkuvik.github.io/pizza-app/
-#Логин: a@gmail.com
-#Пароль: 123
+pizza-app
+ 
+https://artemkuvik.github.io/pizza-app/
 
-#-Работает регистрация, корзина
+Логин: a@gmail.com
+
+Пароль: 123
+
+-Работает регистрация, корзина
