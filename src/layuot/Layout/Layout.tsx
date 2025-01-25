@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispath, RootState } from "../../store/store";
 import { getProfile, userAction } from "../../store/user.slice";
 import { useEffect } from "react";
+import { BASE_URL } from "../../helpers/Api";
 
 export function Layout() {
   const navigate = useNavigate();
@@ -25,12 +26,16 @@ export function Layout() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.menu}>
-        <img src="/public/Intersect.png" alt="man" className={styles.man} />
+        <img
+          src={`${BASE_URL}/Intersect.png`}
+          alt="man"
+          className={styles.man}
+        />
         <div className={styles.title}>{profile?.name}</div>
         <div className={styles.email}>{profile?.email}</div>
         <div className={styles.main}>
           <div className={cn(styles["menu-elem"])}>
-            <img src="/public/menu-icon.svg" alt="menu" />
+            <img src={`${BASE_URL}/menu-icon.svg`} alt="menu" />
             <NavLink
               className={({ isActive }) =>
                 cn(styles.link, {
@@ -43,7 +48,7 @@ export function Layout() {
             </NavLink>
           </div>
           <div className={cn(styles["menu-elem"], styles.card)}>
-            <img src="/public/cart-icon.svg" alt="card" />
+            <img src={`${BASE_URL}/cart-icon.svg`} alt="card" />
             <NavLink
               className={({ isActive }) =>
                 cn(styles.link, {
@@ -58,7 +63,7 @@ export function Layout() {
           </div>
         </div>
         <Button onClick={logout} className={styles.button}>
-          <img src="/public/Group 18072.svg" alt="" />
+          <img src={`${BASE_URL}/Group 18072.svg`} alt="" />
           <div>Выйти</div>
         </Button>
       </div>

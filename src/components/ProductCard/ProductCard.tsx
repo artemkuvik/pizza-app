@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { AppDispath } from "../../store/store";
 import { cartAction } from "../../store/cart.slice";
 import { Raiting } from "../Raiting/Raiting";
+import { BASE_URL } from "../../helpers/Api";
 
 function ProductCard({
   id,
@@ -27,7 +28,7 @@ function ProductCard({
           <span className={styles.icon}>&#8381;</span>
         </div>
         <button className={styles.basket} onClick={add}>
-          <img src="/basket.svg" alt="basket" />
+          <img src={`${BASE_URL}/basket.svg`} alt="basket" />
         </button>
         <img className={styles.img} src={img} alt="dish" />
         <Raiting rating={rating} className={styles["rating-position"]} />

@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { AppDispath } from "../../store/store";
 import { cartAction } from "../../store/cart.slice";
 import { CartItemProps } from "./CartItem.props";
+import { BASE_URL } from "../../helpers/Api";
 
 function CartItem(props: CartItemProps) {
   const dispatch = useDispatch<AppDispath>();
@@ -31,14 +32,14 @@ function CartItem(props: CartItemProps) {
       </div>
       <div className={styles["actions"]}>
         <button className={styles["minus"]} onClick={descrease}>
-          <img src="/public/minus-icon.svg" alt="Удалить из корзины" />
+          <img src={`${BASE_URL}/minus-icon.svg`} alt="Удалить из корзины" />
         </button>
         <div className={styles["number"]}>{props.count}</div>
         <button className={styles["plus"]} onClick={increase}>
-          <img src="/plus-icon.svg" alt="Добавить в корзину" />
+          <img src={`${BASE_URL}/plus-icon.svg`} alt="Добавить в корзину" />
         </button>
         <button className={styles["remove"]} onClick={remove}>
-          <img src="/public/delete-icon.svg" alt="Удалить все" />
+          <img src={`${BASE_URL}/delete-icon.svg`} alt="Удалить все" />
         </button>
       </div>
     </div>

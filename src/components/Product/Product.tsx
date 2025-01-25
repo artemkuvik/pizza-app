@@ -7,6 +7,7 @@ import { AppDispath } from "../../store/store";
 import { useDispatch } from "react-redux";
 import { cartAction } from "../../store/cart.slice";
 import { Raiting } from "../Raiting/Raiting";
+import { BASE_URL } from "../../helpers/Api";
 
 export function Product() {
   const data = useLoaderData() as Product;
@@ -29,12 +30,12 @@ export function Product() {
               console.log("click");
             }}
           >
-            <img src="/Product-return.png" alt="Стрелка" />
+            <img src={`${BASE_URL}/Product-return.png`} alt="Стрелка" />
           </button>
           <h1 className={styles.name}>{data.name}</h1>
         </div>
         <Button appearance="small" className={styles.basket} onClick={add}>
-          <img src="/basket.svg" alt="basket" />
+          <img src={`${BASE_URL}/basket.svg`} alt="basket" />
           <span>В корзину</span>
         </Button>
       </div>
